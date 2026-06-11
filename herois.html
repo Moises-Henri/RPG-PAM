@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção de Herói - Jogo RPG</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Escolha seu Herói</h1>
+        <p>Selecione um personagem para iniciar sua jornada.</p>
+        <!--<section class="box">
+            <h2>Tela de Seleção de Herói</h2>
+            <p>Essa tela será desenvolvida na próxima etapa.</p>
+             <a href="./index.html">
+                <button>Voltar para Login</button>
+            </a>
+        </section>-->
+        <section id="listaHerois" class="cards-container"></section>
+        <pre id="saida"></pre>
+    </main>
+    <script src="./src/model/Heroi.js"></script>
+    <script src="./src/model/Guerreiro.js"></script>
+    <script src="./src/model/Arqueiro.js"></script>
+    <script src="./src/model/Mago.js"></script>
+
+    <script src="./src/data/heroisMock.js"></script>
+
+    <script src="./src/view/HeroiView.js"></script>
+    <script src="./src/controller/heroiController.js"></script>
+</body>
+</html>
