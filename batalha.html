@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparação da Batalha - Jogo RPG</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Preparação da Batalha</h1>
+        <p>Nesta etapa os equipamentos alteram os atributos do herói</p>
+
+        <section class="box">
+            <h2>Herói Preparado</h2>
+            <pre id="saidaHeroi"></pre>
+        </section>
+
+        <section class="box">
+            <h2>Equipamentos utilizados</h2>
+            <pre id="saidaEquipamentos"></pre>
+        </section>
+
+        <section class="box">
+            <h2>Atributos antes e depois</h2>
+            <pre id="saidaComparacao"></pre>
+        </section>
+
+        <section class="box">
+            <h2>Resultado da preparação</h2>
+            <pre id="saida"></pre>
+        </section>
+
+        <div class="acoes">
+            <a href="./selecao-equipamento.html"><button type="button">Voltar</button></a>
+            <a href="./index.html"><button type="button">Sair</button></a>
+        </div>
+    </main>
+
+    <script src="./src/model/Heroi.js"></script>
+    <script src="./src/model/Guerreiro.js"></script>
+    <script src="./src/model/Arqueiro.js"></script>
+    <script src="./src/model/Mago.js"></script>
+
+    <script src="./src/model/Equipamento.js"></script>
+    <script src="./src/model/Arma.js"></script>
+    <script src="./src/model/Armadura.js"></script>
+    <script src="./src/model/Pocao.js"></script>
+
+    <script src="./src/data/equipamentosMock.js"></script>
+    <script src="./src/view/EquipamentoView.js"></script>
+    <script src="./src/controller/batalhaController.js"></script>
+</body>
+</html>
